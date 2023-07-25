@@ -1,0 +1,9 @@
+.headie{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.headie h1{
+    font-size: 3rem;
+}

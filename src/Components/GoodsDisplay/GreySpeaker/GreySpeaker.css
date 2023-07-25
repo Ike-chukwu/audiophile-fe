@@ -1,0 +1,44 @@
+.grey-speaker {
+    margin-block: 2rem;
+    position: relative;
+}
+
+.grey-speaker .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 6rem;
+}
+
+.grey-speaker .left h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.grey-speaker .btn {
+    background: none;
+    border: .1rem solid #000;
+    color: black;
+}
+
+.grey-speaker .btn:hover{
+    background: black;
+    color: white;
+}
+
+.grey-speaker .right-h {
+    width: 100%;
+    height: 100%;
+}
+
+.grey-speaker .right-h img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width:1000px) {
+    .grey-speaker .left {
+        padding-left: 3rem;
+    }
+}

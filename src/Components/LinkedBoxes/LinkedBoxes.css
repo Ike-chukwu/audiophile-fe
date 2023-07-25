@@ -1,0 +1,42 @@
+.what-you-like .box{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-block: 3rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.what-you-like .box h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.what-you-like .box .btn{
+    background: #d87d4a;
+    color: white;
+}
+
+.what-you-like .box img{
+    width: 100%;
+    border-radius: 0.9rem;
+}
+.what-you-like .box .btn:hover{
+  background: hsl(22, 94%, 54%);
+}
+
+
+@media(max-width:980px) {
+    .what-you-like .box{
+        align-items: unset;
+        text-align: center;
+    }
+
+    .what-you-like .box img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        align-items: unset;
+    }
+}

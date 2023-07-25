@@ -1,0 +1,32 @@
+.goods{
+    display: flex;
+    gap: 4rem;
+    padding-top: 5rem;
+}
+
+.goods .prod{
+    flex-basis: 33%;
+}
+
+
+
+
+@media(max-width:1050px){
+    .goods .prod{
+        flex-basis: 33%;
+    }
+}
+
+@media(max-width:550px){
+    .goods{
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .goods .prod{
+        flex-basis: unset;
+        width: 100%;
+        margin-inline: auto;
+    }
+  
+}

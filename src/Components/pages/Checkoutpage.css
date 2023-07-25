@@ -1,0 +1,268 @@
+.cart {
+    background-color: rgb(242, 242, 242);
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 10rem;
+}
+
+
+.cart .checkout-side {
+    background: white;
+    padding: 4rem;
+}
+
+.cart .checkout-side .titlez {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.cart .checkout-side .aspects {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-top: 3rem;
+}
+
+.cart .checkout-side .aspects .billing,
+.cart .checkout-side .aspects .shipping-aspect,
+.cart .checkout-side .aspects .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.cart .checkout-side .aspects .billing .i-fields .side-side,
+.cart .checkout-side .aspects .shipping-aspect .i-fields-1,
+.cart .checkout-side .aspects .payment-methods .i-box-pack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .checkout-side .aspects .billing .i-fields .side-side .ind-input,
+.cart .checkout-side .aspects .billing .ind-input,
+.cart .checkout-side .aspects .shipping-aspect .i-fields-1 .ind-input,
+.cart .checkout-side .aspects .payment-methods .i-box-pack .checkers {
+    width: 48%;
+}
+
+.cart .checkout-side .aspects .billing .i-fields .side-side .ind-input label,
+.cart .checkout-side .aspects .billing .ind-input p,
+.cart .checkout-side .aspects .shipping-aspect label {
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+.cart .checkout-side .aspects .billing .i-fields .side-side .ind-input input,
+.cart .checkout-side .aspects .billing .ind-input input,
+.cart .checkout-side .aspects .shipping-aspect .i-fields-1 .ind-input input {
+    width: 100%;
+    padding-block: 1rem;
+    padding-left: 1.5rem;
+}
+
+.cart .checkout-side .aspects .billing .c-subtitle,
+.cart .checkout-side .aspects .shipping-aspect .c-subtitle,
+.cart .checkout-side .aspects .payment-methods .c-subtitle {
+    text-transform: uppercase;
+    color: rgb(216, 125, 74);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.cart .checkout-side .aspects .shipping-aspect .extra{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+}
+
+.cart .checkout-side .aspects .shipping-aspect .i-fields-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cart .checkout-side .aspects .payment-methods .i-box-pack .checkers {
+    border: .1rem solid black;
+}
+
+.cart .checkout-side .aspects .payment-methods .i-box-pack .checkers {
+    padding-block: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cart .checkout-side .aspects .payment-methods .i-box-pack .checkers span {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+
+
+/* ---sumary paper-- */
+.cart .summary {
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    height: fit-content;
+}
+
+.cart .summary h3{
+    flex: unset;
+}
+
+.cart .summary .p-deets{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart .summary .p-deets .purchased-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart .summary .p-deets .purchased-item img{
+    width: 50px;
+    height: 50px;
+}
+
+.cart .summary .p-deets .purchased-item .count-btns{
+    padding-block: 1.5rem;
+    align-items: center;
+    /* padding-inline: 1.5rem;  */
+}
+
+
+
+.cart .summary .p-deets .purchased-item .cart-items-price{
+    text-align: center;
+}
+
+.cart .summary .p-deets .purchased-item .cart-items-price .active-product{
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.cart .summary .p-deets .purchased-item .cart-items-price .price-tag{
+    font-weight: 530;
+    font-size: 1.2rem;
+}
+
+.cart .summary h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.cart .summary .remainder {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.cart .summary .remainder .three-pack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart .summary .remainder .packk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.cart .summary .remainder .packk .heading {
+    opacity: .5;
+}
+
+.cart .summary .remainder .packk .price {
+    font-weight: 700;
+}
+
+.cart .summary .remainder .packk .price-colored {
+    font-weight: 700;
+    color: rgb(216, 125, 74);
+}
+
+
+.cart .summary .remainder .long {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: rgb(216, 125, 74);
+    color: white;
+    font-weight: 550;
+    opacity: .5;
+}
+
+.cart .summary .remainder .long.ready{
+    opacity: 1;
+}
+
+.cart .summary .remainder .long.ready:hover{
+    cursor: pointer;
+    background: hsl(22, 94%, 54%);
+
+}
+
+
+.error-message{
+    color: red;
+    font-size: 1.2rem;
+    display: none;
+}
+
+input:invalid[focused="true"] ~ .error-message{
+    display: block;
+}
+
+input:invalid[focused="true"] {
+    border: .1rem solid red ;
+}
+
+
+
+/* media query 1200px */
+@media(max-width:1200px) {
+    .cart {
+        grid-template-columns: 1fr;
+        gap: 10rem;
+    }
+
+}
+
+
+/* media query 900px */
+@media(max-width:900px) {
+
+    .cart{
+        padding-block: 5rem;
+    }
+
+    .cart .checkout-side .aspects .billing .i-fields .side-side,
+    .cart .checkout-side .aspects .shipping-aspect .i-fields-1,
+    .cart .checkout-side .aspects .payment-methods .i-box-pack {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cart .checkout-side .aspects .billing .i-fields .side-side .ind-input,
+    .cart .checkout-side .aspects .billing .ind-input,
+    .cart .checkout-side .aspects .shipping-aspect .i-fields-1 .ind-input,
+    .cart .checkout-side .aspects .payment-methods .i-box-pack .checkers {
+        width: 100%;
+    }
+
+}

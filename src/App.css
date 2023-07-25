@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Signika:wght@500;600&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all ease-in .3s;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Signika', sans-serif;
+}
+
+p, span, a, li{
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+section {
+  padding-inline: 12%;
+  padding-block: 10rem;
+  background: #fafafa;
+}
+
+
+@media(min-width:1500px) {
+  section {
+    padding-inline: 22%;
+    padding-block: 10rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media(max-width:1000px) {
+  section {
+    padding-inline: 4%;
   }
 }

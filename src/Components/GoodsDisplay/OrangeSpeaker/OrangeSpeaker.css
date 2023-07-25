@@ -1,0 +1,69 @@
+.or-speaker {
+    margin-block: 2rem;
+    background: url(../../../assets/images/home/desktop/pattern-circles.svg), #d87d4a;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-inline: 7rem;
+    padding-top: 7rem;
+    justify-content: space-between;
+    background-position: left;
+}
+
+.or-speaker .image {
+    align-self: flex-end;
+}
+
+.or-speaker .image img {
+    width: 40rem;
+}
+
+
+.or-speaker .right {
+    margin-top: 3rem;
+}
+
+.or-speaker .right h1 {
+    font-size: 4.5rem;
+    color: white;
+}
+
+.or-speaker .right p {
+    margin-block: 4rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: white;
+    opacity: .8;
+}
+
+.or-speaker .right .btn {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.or-speaker .right .btn:hover{
+    background: grey;
+}
+
+@media(max-width:1120px){
+    .or-speaker{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-block: unset;
+        padding-block: 8rem;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    .or-speaker .image{
+        margin-inline: auto;
+    }
+
+    .or-speaker .image img {
+        width: 18rem;
+    }
+
+
+}
