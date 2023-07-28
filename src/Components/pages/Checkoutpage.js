@@ -52,7 +52,7 @@ const Checkoutpage = (props) => {
 
   const setAlert = async () => {
     console.log(props.cartItems);
-    await fetch("http://localhost:4000/checkout", {
+    await fetch("https://audiophile-server-1.onrender.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
