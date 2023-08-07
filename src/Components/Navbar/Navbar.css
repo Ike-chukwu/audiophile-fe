@@ -54,14 +54,14 @@
 
 .fa-shopping-cart .extra-circle {
     position: absolute;
-    right: -40%;
-    top: -80%;
+    right: -80%;
+    top: -110%;
     font-size: 1.2rem;
     background: #fbaf85;
-    height: 18px;
-    width: 18px;
+    height: 25px;
+    width: 25px;
     text-align: center;
-    line-height:18px;
+    line-height: 25px;
     border-radius: 50%;
     font-weight: 600;
 }
@@ -98,8 +98,25 @@
 }
 
 
-@media(max-width:540px){
-    .nav{
+@media(max-width:540px) {
+    .nav {
         border-bottom: none;
     }
+}
+
+@media(max-width:850px) {
+    .fa-shopping-cart .extra-circle {
+        position: absolute;
+        right: -55%;
+        top: -80%;
+        font-size: 1.2rem;
+        background: #fbaf85;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        font-weight: 600;
+    }
+
 }

@@ -183,6 +183,7 @@ function App() {
           clearCartFunc={clearCart}
           increaseFromCart={increaseFromCart}
           decreaseFromCart={decreaseFromCart}
+          c_func={setCartActive}
         />
       ) : null}
       <Footer />

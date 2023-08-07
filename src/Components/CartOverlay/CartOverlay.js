@@ -16,8 +16,8 @@ const CartOverlay = (props) => {
   // onClick={() => props.status_func(false)}
   return (
     <AnimatePage>
-      <div className="lightbox">
-        <div className="lightbox-content">
+      <div className="lightbox" onClick={() => props.c_func()} >
+        <div className="lightbox-content" onClick={(e) => e.stopPropagation()} >
           <div className="deetailsss">
             <div className="first-t">
               <span className="a-title">Cart </span>

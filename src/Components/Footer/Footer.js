@@ -35,18 +35,30 @@ const Footer = () => {
           demo facility - we’re open 7 days a week.
         </p>
         <div className="icon">
-          <img src={Facebook} alt="" />
-          <img src={Twitter} alt="" />
-          <img src={Ig} alt="" />
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Facebook} alt="" />
+          </Link>
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Twitter} alt="" />
+          </Link>
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Ig} alt="" />
+          </Link>
         </div>
       </div>
 
       <div className="third">
         <p className="copyright">Copyright 2021. All Rights Reserved</p>
         <div className="iconz">
-          <img src={Facebook} alt="" />
-          <img src={Twitter} alt="" />
-          <img src={Ig} alt="" />
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Facebook} alt="" />
+          </Link>
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Twitter} alt="" />
+          </Link>
+          <Link to="https://github.com/Ike-chukwu?tab=repositories">
+            <img src={Ig} alt="" />
+          </Link>
         </div>
       </div>
     </section>

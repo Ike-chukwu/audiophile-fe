@@ -57,7 +57,6 @@ const Navbar = (props) => {
         {props.totalGoodsCount ? (
           <div className="extra-circle">{props.totalGoodsCount}</div>
         ) : null}
-        {/* <div className="extra-circle">{props.totalGoodsCount}</div> */}
       </div>
     </div>
   );

@@ -34,6 +34,8 @@ const PersonalProductRender = (props) => {
     setAmount(amount - 1);
   };
 
+  const [isPopUp, setIsPopUp] = useState(false);
+
   const {
     id,
     name,
@@ -52,10 +54,16 @@ const PersonalProductRender = (props) => {
   const { mobile: mob, tabelet: tab, desktop: des } = gallery[1];
   const { mobile: mo3, tabelet: ta3, desktop: de3 } = gallery[2];
 
-
   //go to previous page
   const navigate = useNavigate();
 
+
+  //triggersanytime add to cart button is clicked
+  useEffect(() => {
+    setInterval(() => {
+      setIsPopUp(false)
+    }, 6000)
+  }, [isPopUp])
 
   return (
     <AnimatePage>
@@ -96,9 +104,10 @@ const PersonalProductRender = (props) => {
                   <p
                     href=""
                     className="carts"
-                    onClick={() =>
-                      props.handleAddProductFunc(atualData, amount, setAmount)
-                    }
+                    onClick={() => {
+                      setIsPopUp(true);
+                      props.handleAddProductFunc(atualData, amount, setAmount);
+                    }}
                   >
                     ADD TO CART
                   </p>
@@ -192,6 +201,9 @@ const PersonalProductRender = (props) => {
         <Goods />
 
         <AudioGear />
+        <div className={isPopUp ? "cart-notif active" : "cart-notif"}>
+          <p>Item added to cart!</p>
+        </div>
       </div>
     </AnimatePage>
   );
