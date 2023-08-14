@@ -8,16 +8,11 @@ const CartOverlay = (props) => {
     (price, item) => price + item.quantity * item.price,
     0
   );
-  // const totalGoodsCount = props.cartItems.reduce(
-  //   (total, item) => total + item.quantity,
-  //   0
-  // );
-  // console.log(totalGoodsCount);
-  // onClick={() => props.status_func(false)}
+
   return (
     <AnimatePage>
-      <div className="lightbox" onClick={() => props.c_func()} >
-        <div className="lightbox-content" onClick={(e) => e.stopPropagation()} >
+      <div className="lightbox" onClick={() => props.c_func()}>
+        <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
           <div className="deetailsss">
             <div className="first-t">
               <span className="a-title">Cart </span>

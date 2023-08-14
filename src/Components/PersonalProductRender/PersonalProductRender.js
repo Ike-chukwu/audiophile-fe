@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import datam from "../data.json";
-import Button from "../Button/Button";
-import desktops from "../../assets/images/shared/desktop/image-zx9-speaker.jpg";
-import desktopM from "../../assets/images/shared/mobile/image-zx9-speaker.jpg";
-import desktopT from "../../assets/images/shared/tablet/image-zx9-speaker.jpg";
 import "./PersonalProductRender.css";
 import Goods from "../Goods/Goods";
 import AudioGear from "../AudioGear/AudioGear";
 import { useParams } from "react-router-dom";
-import z1 from "../../assets/images/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg";
-import data from "../data.json";
 import LinkedBoxes from "../LinkedBoxes/LinkedBoxes";
-import Success from "../Success/Success";
 import AnimatePage from "../AnimatePage/AnimatePage";
 
 const PersonalProductRender = (props) => {
@@ -57,13 +50,12 @@ const PersonalProductRender = (props) => {
   //go to previous page
   const navigate = useNavigate();
 
-
   //triggersanytime add to cart button is clicked
   useEffect(() => {
     setInterval(() => {
-      setIsPopUp(false)
-    }, 6000)
-  }, [isPopUp])
+      setIsPopUp(false);
+    }, 6000);
+  }, [isPopUp]);
 
   return (
     <AnimatePage>
@@ -168,33 +160,6 @@ const PersonalProductRender = (props) => {
           <h3 className="header-text">YOU MAY ALSO LIKE</h3>
           <div className="what-you-like">
             <LinkedBoxes atualData={atualData} />
-            {/* <div className="box">
-            <picture>
-              <source srcSet={mobiles} media="(max-width:950px)" />
-              <source srcSet={tablets} media="(max-width:1120px)" />
-              <img src={desktops} alt="" />
-            </picture>
-            <h3>{name1}</h3>
-            <Button />
-          </div>
-          <div className="box">
-            <picture>
-              <source srcSet={moo2} media="(max-width:950px)" />
-              <source srcSet={too2} media="(max-width:1120px)" />
-              <img src={doo2} alt="" />
-            </picture>
-            <h3>{name2}</h3>
-            <Button />
-          </div>
-          <div className="box">
-            <picture>
-              <source srcSet={moo3} media="(max-width:950px)" />
-              <source srcSet={too3} media="(max-width:1120px)" />
-              <img src={doo3} alt="" />
-            </picture>
-            <h3>{name3}</h3>
-            <Button />
-          </div> */}
           </div>
         </section>
 

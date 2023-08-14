@@ -1,9 +1,7 @@
 import React from "react";
 import HeadphonesHeader from "../HeadphonesHeader/HeadphonesHeader";
 import BlackHeadphones from "../BlackHeadphones/BlackHeadphones";
-import Template2 from "../Template2/Template2";
 import eD from "../../assets/images/shared/desktop/image-category-thumbnail-earphones.png";
-// import eT from "../../assets/images/shared/tablet/image-category-thumbnail-earphones.jpg";
 import eM from "../../assets/images/shared/mobile/image-category-thumbnail-earphones.png";
 import Goods from "../Goods/Goods";
 import AudioGear from "../AudioGear/AudioGear";

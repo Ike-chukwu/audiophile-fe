@@ -26,9 +26,6 @@ const MobileNav = (props) => {
         <Link className="prod earphones" to="/earphones">
           <Card setStyle="earphones" source={earphones} pContent="Earphones" />
         </Link>
-        {/* <Card setStyle="headset" source={headphones} pContent="headphones" />
-        <Card setStyle="" source={speaker} pContent="Speakers" />
-        <Card setStyle="earphones" source={earphones} pContent="Earphones" /> */}
       </div>
     </div>
   );

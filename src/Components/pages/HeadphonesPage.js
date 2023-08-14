@@ -48,8 +48,6 @@ const HeadphonesPage = () => {
                 identification={d.id}
                 category={d.category}
                 bBreak={d.name}
-                // bBreak="XX59"
-                // aBreak="HEADPHONES"
                 text=" Enjoy your audio almost anywhere and customize it to your specific
           tastes with the XX59 headphones. The stylish yet durable versatile
           wireless headset is a brilliant companion at home or on the move."
@@ -72,34 +70,6 @@ const HeadphonesPage = () => {
             );
           }
         })}
-        {/* <BlackHeadphones
-        dImg={bHeadphonesD}
-        tImg={bHeadphonesT}
-        mImg={bHeadphonesM}
-        bBreak="XX99 MARK II"
-        aBreak="HEADPHONES"
-        text=" The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound."
-      /> */}
-        {/* <Template2
-        dImg={wD}
-        tImg={wT}
-        mImg={wM}
-        bBreak="XX59"
-        aBreak="HEADPHONES"
-        text=" Enjoy your audio almost anywhere and customize it to your specific
-          tastes with the XX59 headphones. The stylish yet durable versatile
-          wireless headset is a brilliant companion at home or on the move."
-      /> */}
-        {/* <Template2
-        dImg={gHeadphonesD}
-        tImg={gHeadphonesT}
-        mImg={gHeadphonesM}
-        bBreak="XX99 MARK I"
-        aBreak="HEADPHONES"
-        text=" As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
-      /> */}
         <Goods />
         <AudioGear />
       </div>

@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BlackHeadphones.css";
-import bHeadphonesD from "../../assets/images/shared/desktop/image-xx99-mark-two-headphones.jpg";
-import bHeadphonesT from "../../assets/images/shared/tablet/image-xx99-mark-two-headphones.jpg";
-import bHeadphonesM from "../../assets/images/shared/mobile/image-xx99-mark-two-headphones.jpg";
 import Button from "../Button/Button";
 
 const BlackHeadphones = (props) => {

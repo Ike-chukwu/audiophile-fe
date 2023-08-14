@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 import AnimatePage from "../AnimatePage/AnimatePage";
 
 const Success = (props) => {
-  // const cartToggler = () => {};
-  // useEffect(() => {
-  //   const lightbox = document.querySelector(".lightbox");
-  //   if (lightbox) {
-  //     lightbox.style.display = cartState ? "block" : "none";
-  //   }
-  // }, [cartState]);
+
   const totalPrice = props.cartItems.reduce(
     (price, item) => price + item.quantity * item.price,
     0

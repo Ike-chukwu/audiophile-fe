@@ -6,21 +6,12 @@ import MobileNav from "./MobileNav/MobileNav";
 
 const Navbar = (props) => {
   const [isNavOpen, setNavOpen] = useState(false);
-  // const [cartState, setCartActive] = useState(false);
 
   const navbarToggle = () => {
     setNavOpen(!isNavOpen);
     props.c_func(false);
     console.log("clicked");
   };
-
-  // const cartToggler = () => {};
-  // useEffect(() => {
-  //   const lightbox = document.querySelector(".lightbox");
-  //   if (lightbox) {
-  //     lightbox.style.display = cartState ? "block" : "none";
-  //   }
-  // }, [cartState]);
 
   return (
     <div className="nav">

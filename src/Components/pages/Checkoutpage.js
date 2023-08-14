@@ -31,17 +31,7 @@ const Checkoutpage = (props) => {
   const [btnState, setBtnState] = useState(false);
 
   const finalVerification = () => {
-    const {
-      name,
-      email,
-      phoneNumber,
-      address,
-      zipCode,
-      city,
-      country,
-      creditCard,
-      cashOnD,
-    } = props.values;
+    const { creditCard, cashOnD } = props.values;
     if (
       (creditCard == true && cashOnD == false) ||
       (creditCard == false && cashOnD == true)
@@ -107,7 +97,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={name}
                     />
                     <span className="error-message">Invalid Name!</span>
@@ -125,7 +114,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={email}
                     />
                     <span className="error-message">
@@ -148,7 +136,6 @@ const Checkoutpage = (props) => {
                   value={phoneNumber}
                   required
                   focused={focused.toString()}
-                  // onBlur={handleFocus}
                   pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
                 />
                 <span className="error-message">
@@ -174,7 +161,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={address}
                     />
                     <span className="error-message">
@@ -194,7 +180,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={zipCode}
                     />
                     <span className="error-message">Zipcode is invalid</span>
@@ -214,7 +199,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={city}
                     />
                     <span className="error-message">
@@ -234,7 +218,6 @@ const Checkoutpage = (props) => {
                       }
                       required
                       focused={focused.toString()}
-                      // onBlur={handleFocus}
                       value={country}
                     />
                     <span className="error-message">
@@ -293,7 +276,6 @@ const Checkoutpage = (props) => {
                 console.log(item.image.desktop);
                 return (
                   <div className="purchased-item">
-                    {/* <p>{name}</p> */}
                     <img src={desktop} alt={name} />
                     <div className="cart-items-price">
                       <p className="active-product">{slug}</p>

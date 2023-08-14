@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Template2.css";
-import wD from "../../assets/images/shared/desktop/image-xx59-headphones.jpg";
-import wT from "../../assets/images/shared/tablet/image-xx59-headphones.jpg";
-import wM from "../../assets/images/shared/mobile/image-xx59-headphones.jpg";
 import Button from "../Button/Button";
 
 const Template2 = (props) => {

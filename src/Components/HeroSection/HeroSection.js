@@ -2,7 +2,6 @@ import React from "react";
 import "./HeroSection.css";
 import Button from "../Button/Button";
 import {Link} from "react-router-dom"
-import data from "../data.json"
 
 const HeroSection = (props) => {
 
