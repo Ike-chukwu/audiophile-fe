@@ -100,23 +100,6 @@ section{
 }
 
 
-.cart-notif{
-    background: white;
-    color: black;
-    font-size: 1.4rem;
-    position: absolute;
-    top: 11.5%;
-    width: 30rem;
-    padding: 3rem;
-    color: #d87d4a;
-    font-weight: 600;
-    right: -100%;
-}
-
-.active{
-    right: 12%;
-}
-
 
 @media(max-width:980px) {
     .personal .product-view {
@@ -136,21 +119,9 @@ section{
         width: 100%;
     }
 
-    .cart-notif{
-        right: -40%;
-    }
-
-    .active{
-        right: 4%;
-    }
 
 }
 
-@media(max-width:850px){
-    .cart-notif{
-        display: none;
-    }
-}
 
 
 

@@ -8,10 +8,9 @@ const LinkedBoxes = ({ atualData }) => {
   return atualData.others.map((item, index) => {
     const findName = data.find((d) => d.name == item.name);
     const indexOfConcern = data.findIndex((item) => item.id == findName.id);
-    // console.log(indexOfConcern);
 
     return (
-      <div className="box">
+      <div className="box" key={index}>
         <picture>
           <source srcSet={item.image.mobile} media="(max-width:980px)" />
           <source srcSet={item.image.tablet} media="(max-width:1120px)" />

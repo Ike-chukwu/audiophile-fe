@@ -122,7 +122,7 @@ const PersonalProductRender = (props) => {
             <div className="span-pack">
               {includes.map((item) => {
                 return (
-                  <div className="p-pack">
+                  <div className="p-pack" key={item.item}>
                     <span className="span-colored">{`${item.quantity}x`}</span>
                     <p>{item.item}</p>
                   </div>
@@ -162,13 +162,8 @@ const PersonalProductRender = (props) => {
             <LinkedBoxes atualData={atualData} />
           </div>
         </section>
-
         <Goods />
-
         <AudioGear />
-        <div className={isPopUp ? "cart-notif active" : "cart-notif"}>
-          <p>Item added to cart!</p>
-        </div>
       </div>
     </AnimatePage>
   );

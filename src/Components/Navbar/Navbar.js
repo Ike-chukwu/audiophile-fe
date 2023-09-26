@@ -10,7 +10,6 @@ const Navbar = (props) => {
   const navbarToggle = () => {
     setNavOpen(!isNavOpen);
     props.c_func(false);
-    console.log("clicked");
   };
 
   return (
@@ -37,7 +36,7 @@ const Navbar = (props) => {
         </NavLink>
       </div>
 
-      <MobileNav setting={isNavOpen} />
+      <MobileNav setting={isNavOpen} setNavOpen={setNavOpen} />
       <div
         className="fas fa-shopping-cart"
         onClick={() => {

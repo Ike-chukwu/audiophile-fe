@@ -30,10 +30,8 @@ function App() {
   const [cartItems, setCartItems] = useState(cartItemsFromLocalStorage);
   const [itemCount, setItemCount] = useState(1);
 
-  console.log(cartItems);
   //saving items that were added to cart on last load
   useEffect(() => {
-    console.log(cartItems);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 

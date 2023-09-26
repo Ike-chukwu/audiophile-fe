@@ -17,13 +17,25 @@ const MobileNav = (props) => {
   return (
     <div className={props.setting ? "cover active" : "cover"}>
       <div className="products">
-        <Link to="/headphones" className="prod headset">
+        <Link
+          to="/headphones"
+          className="prod headset"
+          onClick={() => props.setNavOpen(false)}
+        >
           <Card setStyle="headset" source={headphones} pContent="headphones" />
         </Link>
-        <Link className="prod" to="/speakers">
+        <Link
+          className="prod"
+          to="/speakers"
+          onClick={() => props.setNavOpen(false)}
+        >
           <Card setStyle="" source={speaker} pContent="Speakers" />
         </Link>
-        <Link className="prod earphones" to="/earphones">
+        <Link
+          className="prod earphones"
+          to="/earphones"
+          onClick={() => props.setNavOpen(false)}
+        >
           <Card setStyle="earphones" source={earphones} pContent="Earphones" />
         </Link>
       </div>
