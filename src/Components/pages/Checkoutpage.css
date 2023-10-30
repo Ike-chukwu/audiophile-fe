@@ -70,10 +70,10 @@
     font-weight: 600;
 }
 
-.cart .checkout-side .aspects .shipping-aspect .extra{
+.cart .checkout-side .aspects .shipping-aspect .extra {
     display: flex;
     flex-direction: column;
-    
+
     gap: 2rem;
 }
 
@@ -112,28 +112,28 @@
     height: fit-content;
 }
 
-.cart .summary h3{
+.cart .summary h3 {
     flex: unset;
 }
 
-.cart .summary .p-deets{
+.cart .summary .p-deets {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.cart .summary .p-deets .purchased-item{
+.cart .summary .p-deets .purchased-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cart .summary .p-deets .purchased-item img{
+.cart .summary .p-deets .purchased-item img {
     width: 50px;
     height: 50px;
 }
 
-.cart .summary .p-deets .purchased-item .count-btns{
+.cart .summary .p-deets .purchased-item .count-btns {
     padding-block: 1.5rem;
     align-items: center;
     /* padding-inline: 1.5rem;  */
@@ -141,18 +141,18 @@
 
 
 
-.cart .summary .p-deets .purchased-item .cart-items-price{
+.cart .summary .p-deets .purchased-item .cart-items-price {
     text-align: center;
 }
 
-.cart .summary .p-deets .purchased-item .cart-items-price .active-product{
+.cart .summary .p-deets .purchased-item .cart-items-price .active-product {
     font-weight: 600;
     margin-bottom: .5rem;
     font-size: 1.1rem;
     text-transform: uppercase;
 }
 
-.cart .summary .p-deets .purchased-item .cart-items-price .price-tag{
+.cart .summary .p-deets .purchased-item .cart-items-price .price-tag {
     font-weight: 530;
     font-size: 1.2rem;
 }
@@ -207,32 +207,48 @@
     opacity: .5;
 }
 
-.cart .summary .remainder .long.ready{
+.cart .summary .remainder .long.ready {
     opacity: 1;
 }
 
-.cart .summary .remainder .long.ready:hover{
+.cart .summary .remainder .long.ready:hover {
     cursor: pointer;
     background: hsl(22, 94%, 54%);
 
 }
 
 
-.error-message{
+.error-message {
     color: red;
     font-size: 1.2rem;
     display: none;
 }
 
-input:invalid[focused="true"] ~ .error-message{
+input:invalid[focused="true"]~.error-message {
     display: block;
 }
 
 input:invalid[focused="true"] {
-    border: .1rem solid red ;
+    border: .1rem solid red;
 }
 
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 
+.error-container .error-body {
+    font-size: 1.8rem;
+    color: #FBAF85;
+    text-align: center;
+}
 
 /* media query 1200px */
 @media(max-width:1200px) {
@@ -247,7 +263,7 @@ input:invalid[focused="true"] {
 /* media query 900px */
 @media(max-width:900px) {
 
-    .cart{
+    .cart {
         padding-block: 5rem;
     }
 

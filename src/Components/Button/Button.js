@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 
 const Button = () => {
-  return <span className="btn">See product</span>;
+  return <button className="btn">See product</button>;
 };
 
 export default Button;

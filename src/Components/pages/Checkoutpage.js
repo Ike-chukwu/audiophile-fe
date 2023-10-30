@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Checkoutpage.css";
 import AnimatePage from "../AnimatePage/AnimatePage";
+import Spinner from "../Spinner/Spinner";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const Checkoutpage = (props) => {
   const totalPrice = props.cartItems.reduce(
@@ -26,6 +28,8 @@ const Checkoutpage = (props) => {
     setFocused(true);
   };
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
   const isEmpty = Object.values(props.values).every((x) => !!x);
 
   const [btnState, setBtnState] = useState(false);
@@ -41,7 +45,7 @@ const Checkoutpage = (props) => {
   };
 
   const setAlert = async () => {
-    console.log(props.cartItems);
+    setLoading(true);
     await fetch("https://audiophile-server-1.onrender.com/checkout", {
       method: "POST",
       headers: {
@@ -55,12 +59,17 @@ const Checkoutpage = (props) => {
       .then((response) => {
         if (response.url) {
           window.location.assign(response.url);
+          setLoading(false);
         }
+      })
+      .catch((error) => {
+        setError("An error has occured");
+        setLoading(false);
       });
 
-    alert(
-      `Hello ${name}! \nYour request has been received and will be processed shortly.\nPlease check your email for further details. `
-    );
+    // alert(
+    //   `Hello ${name}! \nYour request has been received and will be processed shortly.\nPlease check your email for further details. `
+    // );
     props.setValues({
       name: "",
       email: "",
@@ -74,6 +83,8 @@ const Checkoutpage = (props) => {
     });
   };
 
+  if (loading) return <Spinner />;
+  if (error) return <ErrorPage />;
   return (
     <AnimatePage>
       <section className="cart">

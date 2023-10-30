@@ -21,7 +21,7 @@
     color: black;
 }
 
-.grey-speaker .btn:hover{
+.grey-speaker .btn:hover {
     background: black;
     color: white;
 }
@@ -41,4 +41,18 @@
     .grey-speaker .left {
         padding-left: 3rem;
     }
+}
+
+
+@media(max-width:300px) {
+
+    .grey-speaker .left {
+        padding-left: 2.5rem;
+    }
+
+    .grey-speaker .left h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
 }

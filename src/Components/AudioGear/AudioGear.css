@@ -39,7 +39,7 @@
         gap: 6rem;
     }
 
-    .a-gear .a-left{
+    .a-gear .a-left {
         width: 100%;
         text-align: center;
     }
@@ -54,4 +54,12 @@
         font-size: 1.4rem;
         line-height: 2;
     }
+}
+
+
+@media(max-width:300px) {
+    .a-gear .a-left h1 {
+        font-size: 3rem;
+    }
+
 }

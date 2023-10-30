@@ -5,16 +5,17 @@
     justify-content: space-between;
 }
 
-.dark-earphones .left-side{
+.dark-earphones .left-side {
     width: 48%;
     border-radius: 1rem;
 }
-.dark-earphones .left-side img{
+
+.dark-earphones .left-side img {
     width: 100%;
     border-radius: 1rem;
 }
 
-.dark-earphones .right-side{
+.dark-earphones .right-side {
     background: #EBEBEB;
     width: 48%;
     display: flex;
@@ -28,45 +29,57 @@
 }
 
 
-.dark-earphones .right-side h3{
+.dark-earphones .right-side h3 {
     font-size: 3rem;
     text-transform: uppercase;
 }
 
 .dark-earphones .right-side .btn {
     background: none;
-    border: .1rem solid #000;;
+    border: .1rem solid #000;
+    ;
     color: black;
 }
 
 
-.dark-earphones .right-side .btn:hover{
+.dark-earphones .right-side .btn:hover {
     background: black;
     color: white;
 }
 
 
 
-@media(max-width:1000px){
-    .dark-earphones .right-side{
+@media(max-width:1000px) {
+    .dark-earphones .right-side {
         padding-left: 3rem;
 
     }
 }
 
-@media(max-width:750px){
-    .dark-earphones{
+@media(max-width:750px) {
+    .dark-earphones {
         flex-direction: column;
         width: 100%;
         gap: 2rem;
     }
 
-    .dark-earphones .left-side{
+    .dark-earphones .left-side {
         width: 100%;
     }
 
-    .dark-earphones .right-side{
+    .dark-earphones .right-side {
         width: unset;
         padding-block: 5rem;
+    }
+}
+
+
+@media(max-width:300px) {
+    .dark-earphones .right-side h3 {
+        font-size: 2rem;
+    }
+
+    .dark-earphones .right-side {
+        padding-left: 2.5rem;
     }
 }

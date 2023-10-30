@@ -66,3 +66,28 @@
     }
 
 }
+
+
+
+
+@media(max-width:300px) {
+
+    .hero .text h1 {
+        margin-block: 1.5rem;
+        font-size: 3rem;
+    }
+
+
+    .hero {
+        background: url('../../assets/images/home/hero-min.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: unset;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+}

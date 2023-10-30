@@ -32,6 +32,8 @@ section{
     width: 40%;
 }
 
+/* ikechukwuugboko6@gmail.com */
+
 .personal .product-view .desc .first .new {
     font-size: 1.6rem;
     color: #d87d4a;
@@ -93,6 +95,7 @@ section{
     text-transform: uppercase;
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 .personal .product-view .desc .second .amount-calc .carts:hover{
@@ -117,6 +120,17 @@ section{
 
     .personal .product-view .desc {
         width: 100%;
+    }
+
+    .personal .product-view .desc .second .amount-calc .carts{
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+@media(max-width:300px) {
+    .personal .product-view .desc .first .title {
+        font-size: 3rem;
     }
 
 
@@ -193,9 +207,7 @@ section{
     .features .f-right {
         width: 100%;
     }
-
 }
-
 
 
 
@@ -273,28 +285,6 @@ section{
     gap: 4rem;
 }
 
-/* .what-you-like .box {
-    flex-basis: 33%;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    align-items: center;
-}
-
-.what-you-like .box h3 {
-    font-size: 2.8rem;
-}
-
-.what-you-like .box .btn {
-    background: #d87d4a;
-    color: white;
-}
-
-.what-you-like .box img {
-    width: 100%;
-    border-radius: 0.9rem;
-} */
-
 
 
 @media(max-width:980px) {
@@ -305,3 +295,14 @@ section{
         gap: 6rem;
     }
 }
+
+
+
+@media(max-width:300px) {
+    .header-text {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+

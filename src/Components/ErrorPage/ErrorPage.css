@@ -1,0 +1,17 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.error-container .error-body {
+    font-size: 2rem;
+    color: #FBAF85;
+    font-weight: bold;
+}

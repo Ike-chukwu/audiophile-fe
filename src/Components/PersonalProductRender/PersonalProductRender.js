@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import LinkedBoxes from "../LinkedBoxes/LinkedBoxes";
 import AnimatePage from "../AnimatePage/AnimatePage";
 
+
 const PersonalProductRender = (props) => {
   const { productId } = useParams();
   const atualData = datam[productId];
@@ -93,7 +94,7 @@ const PersonalProductRender = (props) => {
                       onClick={() => increaseAmount()}
                     ></i>
                   </div>
-                  <p
+                  <button
                     href=""
                     className="carts"
                     onClick={() => {
@@ -102,7 +103,7 @@ const PersonalProductRender = (props) => {
                     }}
                   >
                     ADD TO CART
-                  </p>
+                  </button>
                 </div>
               </div>
             </div>

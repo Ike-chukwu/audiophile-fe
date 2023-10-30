@@ -67,3 +67,20 @@
 
 
 }
+
+
+@media(max-width:300px){
+
+    .or-speaker .image{
+        margin-inline: unset;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .or-speaker .right h1 {
+        font-size: 4rem;
+    }
+
+
+}
