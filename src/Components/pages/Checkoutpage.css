@@ -282,3 +282,11 @@ input:invalid[focused="true"] {
     }
 
 }
+
+
+@media(max-width:280px) {
+
+    .cart .checkout-side {
+        padding: 2rem;
+    }
+}

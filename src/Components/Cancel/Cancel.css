@@ -14,7 +14,7 @@
 }
 
 
-.cancel .covering{
+.cancel .covering {
     background: white;
     width: 400px;
     height: 400px;
@@ -26,12 +26,12 @@
     margin-top: 10%;
 }
 
-.cancel .covering p{
+.cancel .covering p {
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
-.cancel .covering button {  
+.cancel .covering button {
     padding: 1.5rem;
     border: none;
     text-transform: uppercase;
@@ -51,18 +51,25 @@
 
 @media(max-width:950px) {
 
-    .cancel .covering{
+    .cancel .covering {
         background: white;
-       margin-top: 30%;
+        margin-top: 30%;
     }
 }
 
 
 @media(max-width:750px) {
-
     .cancel .covering {
         height: 400px;
-        width:350px;
+        width: 250px;
         padding: 2rem;
+    }
+}
+
+
+@media(max-width:300px) {
+    .cancel .covering {
+        height: 400px;
+        width: 200px;
     }
 }

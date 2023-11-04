@@ -1,4 +1,4 @@
-.lightbox{
+.lightbox {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 6rem;
@@ -9,34 +9,34 @@
 }
 
 
-.lightbox .lightbox-content{
-   position: absolute;
-   right: 12%;
-   background: white;
-   top: 10%;
-   width: 40rem;
-   padding-block: 3rem;
-   padding-inline: 3rem;
-   font-size: 1.4rem;
-   text-transform: uppercase;
+.lightbox .lightbox-content {
+    position: absolute;
+    right: 12%;
+    background: white;
+    top: 10%;
+    width: 40rem;
+    padding-block: 3rem;
+    padding-inline: 3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
-.lightbox .lightbox-content .deetailsss{
+.lightbox .lightbox-content .deetailsss {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lightbox .lightbox-content .deetailsss .first-t{
+.lightbox .lightbox-content .deetailsss .first-t {
     font-weight: 600;
     font-size: 1.6rem;
 }
 
-.lightbox .lightbox-content .deetailz{
+.lightbox .lightbox-content .deetailz {
     margin-top: 2rem;
 }
 
-.lightbox .lightbox-content .deetailsss .s-aspect p{
+.lightbox .lightbox-content .deetailsss .s-aspect p {
     text-transform: capitalize;
     transition: none;
     cursor: pointer;
@@ -44,82 +44,82 @@
     /* display: none; */
 }
 
-.lightbox .lightbox-content .deetailsss .s-aspect p:hover{
+.lightbox .lightbox-content .deetailsss .s-aspect p:hover {
     color: #d87d4a;
     text-decoration: underline;
 }
 
-.lightbox .lightbox-content .deetailz{
+.lightbox .lightbox-content .deetailz {
     color: #d87d4a;
     font-weight: 600;
 }
 
 
 /* ---purchased goood section--- */
-.lightbox .lightbox-content .purchased .p-deets{
+.lightbox .lightbox-content .purchased .p-deets {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item img{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item img {
     width: 50px;
     height: 50px;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item .count-btns{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item .count-btns {
     background-color: rgb(241, 241, 241);
     padding-block: 1.5rem;
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding-inline: 1.5rem; 
+    padding-inline: 1.5rem;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item .count-btns button{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item .count-btns button {
     border: none;
     background: none;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price {
     text-align: center;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price .active-product{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price .active-product {
     font-weight: 600;
     margin-bottom: .5rem;
     font-size: 1.3rem;
 }
 
-.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price .price-tag{
+.lightbox .lightbox-content .purchased .p-deets .purchased-item .cart-items-price .price-tag {
     font-weight: 530;
 }
 
-.lightbox .lightbox-content .total{
+.lightbox .lightbox-content .total {
     margin-top: 2rem;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
 }
 
-.lightbox .lightbox-content .purchased .total .total-title{
-    text-transform:capitalize;
+.lightbox .lightbox-content .purchased .total .total-title {
+    text-transform: capitalize;
     opacity: .6;
     font-size: 1.8rem;
 }
 
-.lightbox .lightbox-content .purchased .total .t-cost{
+.lightbox .lightbox-content .purchased .total .t-cost {
     font-weight: 500;
     font-size: 1.8rem;
 }
 
-.lightbox .lightbox-content .purchased .checkout-btn-active{
+.lightbox .lightbox-content .purchased .checkout-btn-active {
     display: block;
     width: 100%;
     color: white;
@@ -129,23 +129,30 @@
     margin-top: 2rem;
 }
 
-.lightbox .lightbox-content .purchased .checkout-btn-active:hover{
+.lightbox .lightbox-content .purchased .checkout-btn-active:hover {
     background: hsl(22, 94%, 54%);
 }
 
 
-@media(max-width:1000px){
-    .lightbox .lightbox-content{
+@media(max-width:1000px) {
+    .lightbox .lightbox-content {
         position: absolute;
         right: 4%;
     }
 }
 
-@media(max-width:500px){
-    .lightbox .lightbox-content{
+@media(max-width:500px) {
+    .lightbox .lightbox-content {
         position: absolute;
         right: 4%;
         left: 4%;
         width: 90%;
+    }
+}
+
+
+@media(max-width:280px) {
+    .lightbox .lightbox-content {
+        padding-inline: 1rem;
     }
 }

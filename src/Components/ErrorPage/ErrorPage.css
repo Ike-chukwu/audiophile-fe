@@ -6,12 +6,24 @@
     height: 100vh;
     width: 100vw;
     position: fixed;
+    flex-direction: column;
     left: 0;
     top: 0;
+    z-index: 100;
+    gap: 2rem;
 }
 
 .error-container .error-body {
     font-size: 2rem;
-    color: #FBAF85;
+    color: black;
     font-weight: bold;
+}
+
+.error-container .error-btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+    background: #FBAF85;
+    font-weight: bold;
+    color: white;
+    border: none;
 }
